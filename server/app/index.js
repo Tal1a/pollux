@@ -1,16 +1,13 @@
-const express = require('express');
-const bodyParser = require('body-parser');
+const app = require('./app');
+const debug = require('debug')('pollux:pollux-server');
+const http = require('http');
 
-const app = express();
+const port = process.env.PORT || 8080;
+app.set('port', port);
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+let server = http.createServer(app);
+server.listen(port);
 
-// routs
-require('./api/index')(app);
-
-app.use((request, response, next) => {
-	response.sendStatus(404);
+server.on('listening', () => {
+	debug(`Pollux has been started on ${port}`)
 });
-
-module.exports = app;
