@@ -8,10 +8,6 @@ app.set('port', port);
 let server = http.createServer(app);
 server.listen(port);
 
-if (!debug.enabled) {
-	console.log(process.env);
-}
-
 server.on('listening', () => {
 	debug(`Pollux has been started on ${port}`)
 });
