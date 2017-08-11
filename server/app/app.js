@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-// routs
+// routes
 require('./api/index')(app);
 
 app.use((request, response, next) => {
