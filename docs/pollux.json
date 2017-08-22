@@ -1,6 +1,6 @@
 {
     "GUID": "6bd97670-8632-11e7-8bf6-27ed4adf7fd5",
-    "lastModifTS": "2017-08-21T06:17:02.988Z",
+    "lastModifTS": "2017-08-22T08:15:01.184Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -90,51 +90,6 @@
                             "format": "",
                             "primaryKey": false,
                             "relationshipType": "Foreign Key",
-                            "parentRelationship": "8ba77b80-8634-11e7-8bf6-27ed4adf7fd5",
-                            "childRelationships": [],
-                            "foreignCollection": "784bbba0-8634-11e7-8bf6-27ed4adf7fd5",
-                            "foreignField": [
-                                "784bbba0-8634-11e7-8bf6-27ed4adf7fd5",
-                                "845ae420-8634-11e7-8bf6-27ed4adf7fd5"
-                            ],
-                            "sample": "",
-                            "GUID": "0db6e1c0-8634-11e7-8bf6-27ed4adf7fd5",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
-                            "name": "New Field",
-                            "arrayItem": true
-                        }
-                    ],
-                    "primaryKey": false,
-                    "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "enum": [],
-                    "GUID": "fc52ac20-8633-11e7-8bf6-27ed4adf7fd5",
-                    "description": "Identifers of lists added on this board. \nWhen a list is created on this board, its identifier must be added to this array but the list itself is stored in List collection.",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
-                    "name": "list_ids"
-                },
-                {
-                    "type": "array",
-                    "properties": [
-                        {
-                            "type": "objectId",
-                            "format": "",
-                            "primaryKey": false,
-                            "relationshipType": "Foreign Key",
                             "parentRelationship": "029976d0-8635-11e7-8bf6-27ed4adf7fd5",
                             "childRelationships": [],
                             "foreignCollection": "acbb0ad0-8634-11e7-8bf6-27ed4adf7fd5",
@@ -171,51 +126,6 @@
                     "required": false,
                     "id": "",
                     "name": "member_ids"
-                },
-                {
-                    "type": "array",
-                    "properties": [
-                        {
-                            "type": "objectId",
-                            "format": "",
-                            "primaryKey": false,
-                            "relationshipType": "Foreign Key",
-                            "parentRelationship": "52bc24a0-8635-11e7-8bf6-27ed4adf7fd5",
-                            "childRelationships": [],
-                            "foreignCollection": "c7b44130-8634-11e7-8bf6-27ed4adf7fd5",
-                            "foreignField": [
-                                "c7b44130-8634-11e7-8bf6-27ed4adf7fd5",
-                                "cc3c6160-8634-11e7-8bf6-27ed4adf7fd5"
-                            ],
-                            "sample": "",
-                            "GUID": "48cafa20-8635-11e7-8bf6-27ed4adf7fd5",
-                            "description": "",
-                            "comments": "",
-                            "dependencies": [],
-                            "required": false,
-                            "id": "",
-                            "name": "New Field",
-                            "arrayItem": true
-                        }
-                    ],
-                    "primaryKey": false,
-                    "relationshipType": "",
-                    "parentRelationship": "",
-                    "childRelationships": [],
-                    "foreignCollection": "",
-                    "foreignField": [],
-                    "additionalItems": true,
-                    "minItems": "",
-                    "maxItems": "",
-                    "uniqueItems": false,
-                    "enum": [],
-                    "GUID": "3c8e5900-8635-11e7-8bf6-27ed4adf7fd5",
-                    "description": "An identifiers of lables available on this board.",
-                    "comments": "",
-                    "dependencies": [],
-                    "required": false,
-                    "id": "",
-                    "name": "label_ids"
                 },
                 {
                     "additionalProperties": false,
@@ -667,7 +577,6 @@
                     "relationshipType": "",
                     "parentRelationship": "",
                     "childRelationships": [
-                        "52bc24a0-8635-11e7-8bf6-27ed4adf7fd5",
                         "59cc59d0-8636-11e7-8bf6-27ed4adf7fd5"
                     ],
                     "foreignCollection": "",
@@ -790,7 +699,6 @@
                     "relationshipType": "",
                     "parentRelationship": "",
                     "childRelationships": [
-                        "8ba77b80-8634-11e7-8bf6-27ed4adf7fd5",
                         "fc2b8a30-8635-11e7-8bf6-27ed4adf7fd5"
                     ],
                     "foreignCollection": "",
@@ -991,26 +899,6 @@
     "views": [],
     "relationships": [
         {
-            "GUID": "8ba77b80-8634-11e7-8bf6-27ed4adf7fd5",
-            "name": "New Relationship",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "784bbba0-8634-11e7-8bf6-27ed4adf7fd5",
-            "parentField": [
-                "784bbba0-8634-11e7-8bf6-27ed4adf7fd5",
-                "845ae420-8634-11e7-8bf6-27ed4adf7fd5"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "85c5d0b0-8632-11e7-8bf6-27ed4adf7fd5",
-            "childField": [
-                "85c5d0b0-8632-11e7-8bf6-27ed4adf7fd5",
-                "fc52ac20-8633-11e7-8bf6-27ed4adf7fd5",
-                "0db6e1c0-8634-11e7-8bf6-27ed4adf7fd5"
-            ],
-            "childCardinality": "1"
-        },
-        {
             "GUID": "029976d0-8635-11e7-8bf6-27ed4adf7fd5",
             "name": "New Relationship(1)",
             "description": "",
@@ -1027,26 +915,6 @@
                 "85c5d0b0-8632-11e7-8bf6-27ed4adf7fd5",
                 "f4acdbc0-8634-11e7-8bf6-27ed4adf7fd5",
                 "fac47590-8634-11e7-8bf6-27ed4adf7fd5"
-            ],
-            "childCardinality": "1"
-        },
-        {
-            "GUID": "52bc24a0-8635-11e7-8bf6-27ed4adf7fd5",
-            "name": "New Relationship(2)",
-            "description": "",
-            "comments": "",
-            "relationshipType": "Foreign Key",
-            "parentCollection": "c7b44130-8634-11e7-8bf6-27ed4adf7fd5",
-            "parentField": [
-                "c7b44130-8634-11e7-8bf6-27ed4adf7fd5",
-                "cc3c6160-8634-11e7-8bf6-27ed4adf7fd5"
-            ],
-            "parentCardinality": "1",
-            "childCollection": "85c5d0b0-8632-11e7-8bf6-27ed4adf7fd5",
-            "childField": [
-                "85c5d0b0-8632-11e7-8bf6-27ed4adf7fd5",
-                "3c8e5900-8635-11e7-8bf6-27ed4adf7fd5",
-                "48cafa20-8635-11e7-8bf6-27ed4adf7fd5"
             ],
             "childCardinality": "1"
         },
@@ -1176,7 +1044,6 @@
         "95663640-8632-11e7-8bf6-27ed4adf7fd5": "_id",
         "a82f7a20-8632-11e7-8bf6-27ed4adf7fd5": "title",
         "adddf1e0-8632-11e7-8bf6-27ed4adf7fd5": "visibility",
-        "fc52ac20-8633-11e7-8bf6-27ed4adf7fd5": "list_ids",
         "784bbba0-8634-11e7-8bf6-27ed4adf7fd5": "List",
         "845ae420-8634-11e7-8bf6-27ed4adf7fd5": "_id",
         "acbb0ad0-8634-11e7-8bf6-27ed4adf7fd5": "User",
@@ -1186,7 +1053,6 @@
         "c7b44130-8634-11e7-8bf6-27ed4adf7fd5": "Label",
         "cc3c6160-8634-11e7-8bf6-27ed4adf7fd5": "_id",
         "f4acdbc0-8634-11e7-8bf6-27ed4adf7fd5": "member_ids",
-        "3c8e5900-8635-11e7-8bf6-27ed4adf7fd5": "label_ids",
         "6d93c940-8635-11e7-8bf6-27ed4adf7fd5": "board_id",
         "7c4d0320-8635-11e7-8bf6-27ed4adf7fd5": "name",
         "f1a376e0-8635-11e7-8bf6-27ed4adf7fd5": "list_id",
