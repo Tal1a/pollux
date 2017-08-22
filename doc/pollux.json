@@ -1,6 +1,6 @@
 {
     "GUID": "6bd97670-8632-11e7-8bf6-27ed4adf7fd5",
-    "lastModifTS": "2017-08-22T08:15:01.184Z",
+    "lastModifTS": "2017-08-22T08:59:40.465Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -52,7 +52,7 @@
                     "enum": [],
                     "sample": "",
                     "GUID": "a82f7a20-8632-11e7-8bf6-27ed4adf7fd5",
-                    "description": "",
+                    "description": "A title of this board.",
                     "comments": "",
                     "dependencies": [],
                     "required": true,
@@ -75,7 +75,7 @@
                     "enum": [],
                     "sample": "",
                     "GUID": "adddf1e0-8632-11e7-8bf6-27ed4adf7fd5",
-                    "description": "A field describing who can see this board. It accepts only two values: PRIVATE and PUBLIC. \nWhen it is equal to PRIVATE, anyone who is in the member list can access this board. When it is equal to PUBLIC, anyone who has a link on this board can access it.",
+                    "description": "A field describing who can see this board. It accepts only two values: PRIVATE and PUBLIC. \nWhen it is equal to PRIVATE, anyone who is in the member list can access this board. When it is equal to PUBLIC, anyone who has a link on this board can access it. We support only PRIVATE for now.",
                     "comments": "",
                     "dependencies": [],
                     "required": true,
@@ -132,7 +132,7 @@
                     "childRelationships": [],
                     "comments": "",
                     "dependencies": [],
-                    "description": "A board can have two type of backgrounds: color or image. When color is choisen, it must only be equal to a predefined color from the set. Color and image are exclusive, we can not have both of them in a time.",
+                    "description": "A board can have two type of backgrounds: color or image. When color is chosen, it must only be equal to a predefined color from the set. Color and image are exclusive, we can not have both of them in a time. For now we support only color.",
                     "enum": [],
                     "foreignCollection": "",
                     "foreignField": [],
@@ -388,6 +388,48 @@
                     "required": true,
                     "id": "",
                     "name": "order"
+                },
+                {
+                    "type": "array",
+                    "properties": [
+                        {
+                            "type": "objectId",
+                            "format": "",
+                            "primaryKey": false,
+                            "relationshipType": "",
+                            "parentRelationship": "",
+                            "childRelationships": [],
+                            "foreignCollection": "",
+                            "foreignField": [],
+                            "sample": "",
+                            "GUID": "8f37a0e0-8715-11e7-8e92-43b58a7f13e7",
+                            "description": "",
+                            "comments": "",
+                            "dependencies": [],
+                            "required": false,
+                            "id": "",
+                            "name": "New Field",
+                            "arrayItem": true
+                        }
+                    ],
+                    "primaryKey": false,
+                    "relationshipType": "",
+                    "parentRelationship": "",
+                    "childRelationships": [],
+                    "foreignCollection": "",
+                    "foreignField": [],
+                    "additionalItems": true,
+                    "minItems": "",
+                    "maxItems": "",
+                    "uniqueItems": false,
+                    "enum": [],
+                    "GUID": "89df1150-8715-11e7-8e92-43b58a7f13e7",
+                    "description": "Identifiers of users who are member of this card. They receive notifications about any changes of this card.",
+                    "comments": "",
+                    "dependencies": [],
+                    "required": false,
+                    "id": "",
+                    "name": "member_ids"
                 }
             ],
             "definitions": {
@@ -507,7 +549,7 @@
                     "dependencies": [],
                     "required": true,
                     "id": "",
-                    "name": "created_time"
+                    "name": "created_at"
                 },
                 {
                     "type": "string",
@@ -731,7 +773,7 @@
                     "enum": [],
                     "sample": "",
                     "GUID": "6d93c940-8635-11e7-8bf6-27ed4adf7fd5",
-                    "description": "",
+                    "description": "Refers to a board by an identifier where this list is shown.",
                     "comments": "",
                     "dependencies": [],
                     "required": true,
@@ -754,7 +796,7 @@
                     "enum": [],
                     "sample": "",
                     "GUID": "7c4d0320-8635-11e7-8bf6-27ed4adf7fd5",
-                    "description": "",
+                    "description": "A name of this list.",
                     "comments": "",
                     "dependencies": [],
                     "required": true,
@@ -877,7 +919,7 @@
             "GUID": "7c2d7490-8632-11e7-8bf6-27ed4adf7fd5",
             "name": "pollux",
             "type": "bucket",
-            "description": "",
+            "description": "Description of all collections can be found here https://trello.com/guide/board-basics.html",
             "comments": "",
             "collectionIds": [
                 "85c5d0b0-8632-11e7-8bf6-27ed4adf7fd5",
@@ -1068,8 +1110,9 @@
         "e2eb1570-8637-11e7-8bf6-27ed4adf7fd5": "_id",
         "ed5cba90-8637-11e7-8bf6-27ed4adf7fd5": "card_id",
         "04668e50-8638-11e7-8bf6-27ed4adf7fd5": "text",
-        "0d85e9e0-8638-11e7-8bf6-27ed4adf7fd5": "created_time",
-        "388c0340-8638-11e7-8bf6-27ed4adf7fd5": "user_id"
+        "0d85e9e0-8638-11e7-8bf6-27ed4adf7fd5": "created_at",
+        "388c0340-8638-11e7-8bf6-27ed4adf7fd5": "user_id",
+        "89df1150-8715-11e7-8e92-43b58a7f13e7": "member_ids"
     },
     "definitions": {
         "type": "definitions",
