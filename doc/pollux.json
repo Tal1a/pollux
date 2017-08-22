@@ -1,6 +1,6 @@
 {
     "GUID": "6bd97670-8632-11e7-8bf6-27ed4adf7fd5",
-    "lastModifTS": "2017-08-22T08:59:40.465Z",
+    "lastModifTS": "2017-08-22T14:05:33.125Z",
     "persistenceSchemaVersion": "1",
     "description": "",
     "comments": "",
@@ -408,7 +408,7 @@
                             "dependencies": [],
                             "required": false,
                             "id": "",
-                            "name": "New Field",
+                            "name": "[0]*",
                             "arrayItem": true
                         }
                     ],
@@ -552,12 +552,8 @@
                     "name": "created_at"
                 },
                 {
-                    "type": "string",
-                    "minLength": "",
-                    "maxLength": "",
-                    "pattern": "",
+                    "type": "objectId",
                     "format": "",
-                    "default": "",
                     "primaryKey": false,
                     "relationshipType": "Foreign Key",
                     "parentRelationship": "41c21b20-8638-11e7-8bf6-27ed4adf7fd5",
@@ -567,7 +563,6 @@
                         "acbb0ad0-8634-11e7-8bf6-27ed4adf7fd5",
                         "b26ba570-8634-11e7-8bf6-27ed4adf7fd5"
                     ],
-                    "enum": [],
                     "sample": "",
                     "GUID": "388c0340-8638-11e7-8bf6-27ed4adf7fd5",
                     "description": "An identifier of a user who created this comment.",
@@ -1112,7 +1107,8 @@
         "04668e50-8638-11e7-8bf6-27ed4adf7fd5": "text",
         "0d85e9e0-8638-11e7-8bf6-27ed4adf7fd5": "created_at",
         "388c0340-8638-11e7-8bf6-27ed4adf7fd5": "user_id",
-        "89df1150-8715-11e7-8e92-43b58a7f13e7": "member_ids"
+        "89df1150-8715-11e7-8e92-43b58a7f13e7": "member_ids",
+        "8f37a0e0-8715-11e7-8e92-43b58a7f13e7": "[0]*"
     },
     "definitions": {
         "type": "definitions",
